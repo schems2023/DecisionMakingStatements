@@ -5,30 +5,28 @@ int main(){
 
  printf("enter the firstNUmber\n");
  scanf("%d", &firstNumber);
+
  printf("enter the secondNUmber\n");
  scanf("%d", &secondNumber);
+
  printf("enter the thirdNumber\n");
  scanf("%d", &thirdNumber);
 
  if(firstNumber > secondNumber){
-   if(firstNumber > thirdNumber){
+   if(firstNumber > thirdNumber)
+   {
     printf("%d is largest", firstNumber);
-   }else{
+   }
+   else
+   {
     printf("%d is largest ",thirdNumber );
    }
- }
- else {
-
+  }
+  else {
   if(secondNumber > thirdNumber){
    printf("%d is largest ", secondNumber);
   }else{
    printf("%d is largest", thirdNumber);
   }
-
-
- }
-
-
-
-
+  }
 }
