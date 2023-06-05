@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 // C program to print numbers from 1 to 10 using a for loop, but stop the loop when the number 6 is encountered.
 
 int main(){
