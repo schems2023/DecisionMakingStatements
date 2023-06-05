@@ -1,22 +1,27 @@
-// program to check whether a number entered by the user is prime or not:
+// program to check whther the entered number is prime or not:
 
 #include <stdio.h>
-#include <math.h>
 
-int main(){
- int i,n, squareRootNumber;
- printf("enter the number N: ");
- scanf("%d", &n);
- squareRootNumber = (int)sqrt(n);            // typecasting : in default case sqrt() function returns double datatype, 
-                                             //  here (int)sqrt(n),  converting the  double datatype to int datatype,
-                                             // to use sqrt() function , we have to import <math.h> header file
+int main() {
+    int number, i;
+    int isPrime = 1;
 
- for(i = 2; i <= squareRootNumber; i++){
-  if(n % i == 0){
-   
-  }
- 
+    printf("Enter a positive integer: ");
+    scanf("%d", &number);
 
+    for (i = 2; i < number; i++) {
+        if (number % i == 0) {
+            isPrime = 0;              
+            break;
+        }
+    }
 
- }
+    if (isPrime) {                           // if isPrime = 0, number  is not a prime number,
+                                             // if isPrime =  1, number is prime number
+        printf("%d is a prime number.\n", number);
+    } else {
+        printf("%d is not a prime number.\n", number);
+    }
+
+    return 0;
 }
