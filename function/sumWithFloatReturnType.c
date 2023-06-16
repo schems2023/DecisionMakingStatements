@@ -3,7 +3,7 @@
 
 #include <stdio.h>
 
-float sum(int num1, float num2) {     // function defintion with differnt datatype argument
+float sum(int num1, float num2) {     // function defintion with differnt datatype parameter
     float add = num1 + num2;           
     return add;                 // here it returns float dataype add, so we have to  define function with float return type
 }

@@ -12,9 +12,7 @@ int main() {
     int number1, number2;
     printf("Enter two numbers: ");
     scanf("%d %d", &number1, &number2);
-
-    int result = sum(number1, number2);         // calling function with int returntype , 
-                                                // calling function is used after the function defintion ,so we don't need function declaration in this program
+    int result = sum(number1, number2);         // calling function with int returntype ,                                              // calling function is used after the function defintion ,so we don't need function declaration in this program
     printf("The sum of %d and %d is: %d\n", number1, number2, result);
 
     return 0;
